@@ -6,12 +6,7 @@
 
 TFT myScreen = TFT(CS, DC, RESET);
 
-// variable to keep track of the elapsed time
-int counter = 0;
-// char array to print time
-char printout[4];
-
-void setup(){
+void setup() {
   pinMode(5, OUTPUT);
   digitalWrite(5, HIGH);
   myScreen.begin();  
@@ -22,7 +17,7 @@ void setup(){
   digitalWrite(5, HIGH);
 }
 
-void loop(){
+void loop() {
     // print out and erase
     myScreen.stroke(255,255,255);
     myScreen.text("Display radi",0,0);
